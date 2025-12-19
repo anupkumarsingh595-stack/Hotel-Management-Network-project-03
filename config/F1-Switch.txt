@@ -1,0 +1,23 @@
+hostname F1-SWITCH
+
+vlan 80
+ name RECEPTION
+vlan 70
+ name STORE
+vlan 60
+ name LOGISTICS
+
+interface range FastEthernet0/1-6
+ switchport mode access
+ switchport access vlan 80
+
+interface range FastEthernet0/7-12
+ switchport mode access
+ switchport access vlan 70
+
+interface range FastEthernet0/13-18
+ switchport mode access
+ switchport access vlan 60
+
+interface FastEthernet0/24
+ switchport mode trunk
