@@ -1,0 +1,23 @@
+hostname F2-SWITCH
+
+vlan 50
+ name FINANCE
+vlan 40
+ name HR
+vlan 30
+ name SALES
+
+interface range FastEthernet0/1-6
+ switchport mode access
+ switchport access vlan 50
+
+interface range FastEthernet0/7-12
+ switchport mode access
+ switchport access vlan 40
+
+interface range FastEthernet0/13-18
+ switchport mode access
+ switchport access vlan 30
+
+interface FastEthernet0/24
+ switchport mode trunk
