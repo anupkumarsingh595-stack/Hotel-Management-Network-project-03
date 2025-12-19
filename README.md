@@ -1,4 +1,4 @@
-# hotel-management-network__Project_Lab_03
+# Hotel-management-network__Project_Lab_03
 <!--  ██████  ██████  ███    ██  █████  -->
 <!--  CCNA NETWORKING PROJECT README   -->
 
